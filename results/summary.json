@@ -1,0 +1,47 @@
+{
+  "project": "Pneumonia Detection from Chest X Rays",
+  "model": "ImageNet-pretrained ResNet18",
+  "completed_training_epochs": 10,
+  "split_counts": {
+    "train": {
+      "NORMAL": 1079,
+      "PNEUMONIA": 2741
+    },
+    "val": {
+      "NORMAL": 270,
+      "PNEUMONIA": 685
+    },
+    "test": {
+      "NORMAL": 234,
+      "PNEUMONIA": 390
+    }
+  },
+  "split_method": "Filename-group splitting with exact-byte duplicate checks; 457 train/validation images excluded for test-group overlap",
+  "verified_patient_independence": false,
+  "test_threshold": 0.5,
+  "test_metrics": {
+    "accuracy": 0.842948717948718,
+    "roc_auc_rounded": 0.963,
+    "pneumonia_recall": 0.9948717948717949,
+    "normal_specificity": 0.5897435897435898,
+    "pneumonia_precision": 0.8016528925619835
+  },
+  "roc_auc_source": "Rounded value shown on the observed evaluation plot; not reconstructed from the confusion matrix",
+  "confusion_matrix": [
+    [
+      138,
+      96
+    ],
+    [
+      2,
+      388
+    ]
+  ],
+  "class_order": [
+    "NORMAL",
+    "PNEUMONIA"
+  ],
+  "confusion_matrix_rows": "actual",
+  "confusion_matrix_columns": "predicted",
+  "scope": "Dataset-specific research evaluation; substantial false positives among normal images; no clinical validation"
+}

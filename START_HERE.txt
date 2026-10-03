@@ -1,0 +1,19 @@
+PNEUMONIA DETECTION REBUILD
+
+This package contains source code and instructions. It has no setup installer,
+EXE, CMD, BAT, or PowerShell script. Windows security settings do not need to be
+changed to follow the manual setup instructions.
+
+If Windows warns about a file, leave it blocked. Record the exact warning text
+and the affected filename before continuing. If Windows Security names a
+threat, review Virus & threat protection > Protection history and keep the file
+quarantined. Do not add antivirus exclusions or choose Run anyway.
+
+Microsoft's explanation of Protection history:
+https://support.microsoft.com/en-us/windows/security/windows-security/protection-history-in-the-windows-security-app
+
+Open README.md with Notepad to read the manual Windows setup commands.
+Open VALIDATION.md to see the tests performed and what is still unverified.
+
+The old project's trained weights and performance scores are not included.
+You will need a dataset and a new training run to establish real results.

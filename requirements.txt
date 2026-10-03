@@ -1,0 +1,7 @@
+numpy>=1.26,<3
+Pillow>=10,<13
+opencv-python-headless>=4.10,<5
+scikit-learn>=1.5,<2
+matplotlib>=3.8,<4
+streamlit>=1.40,<2
+# Install torch and torchvision together using the Windows instructions in README.md.
